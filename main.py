@@ -438,7 +438,7 @@ while not starting and running:
 
     screen.blit(font.render("*******************RULES*******************", True, (255,255,255)),
                 (10, HEIGHT / 2 - 60))
-    screen.blit(font.render("- Use the left, bottom, and right arrow keys to activate the thrusters.", True, (255,255,255)), 
+    screen.blit(font.render("- Use the left, top, and right arrow keys to activate the thrusters.", True, (255,255,255)), 
                 (10, HEIGHT / 2 - 40))
     screen.blit(font.render("- The fuel guage on the right side of the screen shows you how much", True, (255,255,255)), 
                 (10, HEIGHT / 2 - 20))
