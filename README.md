@@ -2,9 +2,9 @@
 A project from my Numerical Analysis class from Junior year, done in honor of the Artemis II mission.
 
 # Before Playing
-Main.py and the files direcotry must be in the same folder. Make sure you have the necessary packages installed:
-pygame
-matplotlib.pyplot
+Main.py and the files directory must be in the same folder. Make sure you have the necessary packages installed:
+- pygame
+- matplotlib.pyplot
 
 # How to Play
 Simply run main.py. 
