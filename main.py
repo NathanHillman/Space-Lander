@@ -64,7 +64,7 @@ lose_sound.set_volume(1.0)
 more_lose_sound.set_volume(1.0)
 win_sound.set_volume(1.0)
 
-pygame.display.set_caption("Project 04 - Moon Landing") #name it what you want
+pygame.display.set_caption("Project 04 - Moon Landing")
 bg_image = pygame.image.load('hw_4/starry_sky.png')
 
 clock = pygame.time.Clock()
@@ -81,8 +81,6 @@ CONVERSION_FACTOR = .0007
 NO_THRUST_RUN = False # Turn on to get no-thrust graphs
 THRUST_FORCE_DOWN = 20000
 THRUST_FORCE_SIDE = 2000 
-
-# I got rid of the scale variable so every pixel corresponds with one meter.
 
 # This way both are indexed to the size of the window
 GROUND = ( HEIGHT / 12 )
@@ -218,7 +216,7 @@ class Lander:
         # Starting values are stored in the class variables.
         Y = [self.x, self.y, self.vx, self.vy, self.m_fuel]
 
-        # A shorter and more compact way AI showed me to solve all of the differential equations at each step. Very pythonian
+        # Implement the 4th order Runge-Kutta
         k1 = f(self.t, Y)
 
         k2 = f(self.t + DT/2, [
