@@ -57,15 +57,15 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 font = pygame.font.SysFont(None, 24)
 large_font = pygame.font.SysFont(None, 60)
 
-lose_sound = pygame.mixer.Sound("hw_4/lose_sound.mp3")
-more_lose_sound = pygame.mixer.Sound("hw_4/more_lose_sound.mp3")
-win_sound = pygame.mixer.Sound("hw_4/win_sound.mp3")
+lose_sound = pygame.mixer.Sound("files/lose_sound.mp3")
+more_lose_sound = pygame.mixer.Sound("files/more_lose_sound.mp3")
+win_sound = pygame.mixer.Sound("files/win_sound.mp3")
 lose_sound.set_volume(1.0)
 more_lose_sound.set_volume(1.0)
 win_sound.set_volume(1.0)
 
-pygame.display.set_caption("Project 04 - Moon Landing")
-bg_image = pygame.image.load('hw_4/starry_sky.png')
+pygame.display.set_caption("Moon Landing")
+bg_image = pygame.image.load('files/starry_sky.png')
 
 clock = pygame.time.Clock()
 
@@ -128,11 +128,11 @@ class Lander:
         self.width_of_fuel_bar = .05
 
         # lander images
-        self.lander = pygame.image.load("hw_4/lunarSprite.png").convert_alpha()
+        self.lander = pygame.image.load("files/lunarSprite.png").convert_alpha()
         self.lander = pygame.transform.scale(self.lander, (LANDER_W, LANDER_H))
 
         # Thrust images
-        self.thrust = pygame.image.load("hw_4/thrust.png").convert_alpha()
+        self.thrust = pygame.image.load("files/thrust.png").convert_alpha()
         self.thrustDownImage = pygame.transform.scale(self.thrust, (THRUSTDOWN_W,THRUSTDOWN_H))
 
         self.thrustSide = pygame.transform.scale(self.thrust, (THRUSTSIDE_W,THRUSTSIDE_H))
